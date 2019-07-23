@@ -2,58 +2,132 @@
 // Change the background color of '#target' by script. 
 
 
+// $(document).ready(function () {
+
+//     $('#target').css('background-color','red')
+
+// });
+
 // EXERCISE 2: Change Parent
 // Change the text in the span, a child of "#target"
 
+// $(document).ready(function(){
+//     $('#target span:last-child').html('change By JQ');
+// })
 
 
 
 // EXERCISE 3: Create Clone
 // Create a clone of the span in "#target" and position it under the origin.
 
+// $(document).ready(function(){
+//     $('#target').append('<button id = "btnclone"> Clone Here </button>')
+//     $('#btnclone').click(function(){
+//         $('#target span').clone().appendTo('#target');
+//     })
+//  })
 
 // EXERCISE 4: Use Filter
 // Change background color of the second ".target"
+// $(document).ready(function () {
 
+//     $("body").click(function () {
+
+//         $('.target').eq(1).css({
+
+//             "background-color":"red",
+//             "color":'#fff'
+
+//         })
+//     })
+
+
+// });
 
 
 // EXERCISE 5: Disable Buttons
 // Disable the button
 
+// $(document).ready(function () {
+//     $('.target button').click(function(){
+//         $('.target button').attr('disabled', 'false');
+//     })
+// });
+
+
+
 // EXERCISE 6: Uncheck CheckBoxes
 // Uncheck all checkboxes using jQuery
+// $(document).ready(function () {
+//     $('.ckeck_all').on('change',function () {
 
+//         if ($('.target input').attr('checked')) {
+
+//             $('.target input').removeAttr('checked')
+//         } else {
+//             $('.target input').attr('checked', 'checked')
+
+//         }
+
+
+//     })
+// })
 
 
 // EXERCISE 7: Change Parent
 // Move "#child" from "#parent1" to "#parent2"
+//  $(document).ready(function () {
+
+// $('#child').appendTo($('#parent2'))
+// // $('#child').prependTo($('#parent2'))
+
+//  });
 
 
 
 // EXERCISE 8: Select A Option in A Select Box
 // Select the second option in the selectbox by script
 
+// $(document).ready(function(){
+//     $('#target select option').eq(1).attr('selected', 'selected')
+// })
 
 
 // EXERCISE 9: Change Size
 // Make "#target" double size
 
+// $(document).ready(function(){
+//     $('#target').css('transform', 'scale(2)')
+// })  
 
 
 
 // EXERCISE 10: Empty Elements
 // Remove all children and text of "#target"
+// $(document).ready(function () {
+
+//     $('#target').empty()
+//     $('.child').remove()
+
+
+// })
 
 
 // Advanced part
 // EXERCISE 11: Delay
 // Show Alert with 1 second delay (Use "setTimeout")
 
-
+// $(document).ready(function () {
+//     alert().setTimeout(1000)
+// });
 
 // EXERCISE 12: Count
 // Show the number of children in an alert
 
+
+// $(document).ready(function(){
+//     alert("Number of childs in target div = " + $("#target div").length);
+// });
 
 
 // EXERCISE 13: Animate
